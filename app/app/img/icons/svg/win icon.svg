@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.09" height="36.35" viewBox="0 0 36.09 36.35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="win_icon" data-name="win icon" class="cls-1" d="M1136.19,3919.1v14.13h18.87v-16.89Zm-17.21,14.13h14.26v-13.89l-14.26,2.08v11.81Zm0,13.95,14.26,2.26V3935h-14.26v12.18Zm17.21,2.51,18.87,2.99V3935h-18.87v14.69Z" transform="translate(-1118.97 -3916.34)"/>
+</svg>

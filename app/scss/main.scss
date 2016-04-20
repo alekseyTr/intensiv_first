@@ -1,5 +1,9 @@
-@import "mixin";
-@import "vars";
+// Core variables and mixins
+@import "mixins";
+@import "variables";
+//Reset and Grid generate (use on start proect and insert in <head>)
+// @import "normalize";
+// @import "grid";
 
 //Load Libs Sass/SCSS
 
@@ -30,6 +34,239 @@ body textarea:required:valid {
 
 }
 //Custom Styles Here
+// Global styles for sections
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+    &.features,
+    &.features__gallery,
+    &.download__app {
+      background-color: #34363a;
+      background-repeat: no-repeat;
+    }
+    h2 {
+      color: #fff;
+    }
 
+}
+// Global styles for icons
+.icon__outline {
+    display: inline-block;
+    padding: .7em;
+    background-color: transparent;
+    border: 2px solid $main-color;
+    border-radius: 50%;
+    transition: background-color ease-in 0.2s;
+}
+    .features__item:hover .icon__outline {
+      background-color: $main-color;
+    } 
+
+.icon {
+  vertical-align: middle;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  fill: #fff;
+  animation: floatyman 2.5s ease-in-out alternate infinite
+}
+
+// Style section features 
+.features,
+.features__gallery {
+  .features__item {
+    padding-top: 15px;
+  }
+  .features__text {
+      margin-top: 15%;
+      margin-bottom: 15%;
+      color: #ECF0F1;
+    }
+    .features__item-title {
+      margin-bottom: 0;
+      color: $main-color;
+      font: 1.3rem "MonserratRegular", sans-serif;
+    }
+    .features__item-description {
+      margin-top: 0;
+      color: #9da6ac;
+      font: 1rem "MonserratLight", sans-serif;
+    }
+}
+.features {
+  
+  position: relative;
+  z-index: 10;
+  background-image: url(../img/features_item.png);
+  background-position: left bottom;
+  background-size: 70%;
+  padding-bottom: 12%;
+        
+}
+.feature__video,
+.testimonial {
+  position: relative;
+  background: center no-repeat transparent;
+  // фон градиента
+  &::after {
+    background: transparent;
+    background: linear-gradient(to right, rgba($main-color, .94) 0%, rgba($main-color-dark, .94) 95%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+    .content {
+    // выводит контент над фоном
+    position: relative;
+    z-index: 1;
+    color:#fff;
+  }
+}
+.feature__video {
+  // фон под градиентом
+  background-image: url(../img/video_bg.jpg);
+  .content {
+    font-size: 1.7rem;
+  }
+}
+.features__gallery {
+  .features__middle {
+    position:relative;
+    left: -25%;
+      img {
+        max-width: 150%;
+      }
+  }
+
+}  
+.dotted__nav {
+  padding-left: 0;
+  padding-top: 4em;
+  .dotted__nav-link {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .dotted__nav-active {
+
+    width: 20px;
+    height: 20px;
+    background: $main-color;
+    vertical-align: top;
+  }
+}
+.dotted__nav-white {
+    .dotted__nav-link {
+      opacity: .4;
+  }
+  .dotted__nav-active {
+      background: #fff;
+      opacity: 1;
+  }
+}
+.dotted__nav-white {
+  padding-top: 1em;
+    .dotted__nav-link {
+      margin-left: 10px;
+      width: 13px;
+      height: 13px;
+  }
+  .dotted__nav-active {
+    width: 16px;
+    height: 16px;
+    vertical-align: baseline;
+  }
+}
+.testimonial {
+   // фон под градиентом
+  background-image: url(../img/testimonial_bg.jpg);
+  &__author {
+    color: #2A2A2B;
+  }
+  &__photo {
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+      img {
+        border-radius: 50%;
+      }
+  }
+}
+.download__app {
+  .download__app-title {
+    font-size: 2rem;
+  }
+  .download__app-desc {
+    color: #9da6ac;
+  }
+}
+.app__platform {
+  margin-top: 4em;
+}
+.platform__item {
+  display: inline-block;
+  margin-right: 20px;
+  background: #858689;
+  border-radius: 5px;
+  padding: 10px 5px;
+  &:last-cild {
+    margin-right: 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  p {
+    margin:0;
+    padding-top: 3px;
+    text-transform: uppercase;
+    font-size: .7rem;
+    line-height: normal;
+     span {
+      font-size: 1.3rem;
+     }
+  }
+  .icon__platform {
+    width: 2.7em;
+    height: 2.7em;
+  }
+}
+.platform__item-android {
+  background: #a4c639;
+}
+.platform__item-win {
+  background: #00bcf2;
+}
+.contacts {
+  background-color: #34363a;
+  padding-top: 0;
+  color: #9da6ac;
+    .col-sm-12 {
+      padding:0;
+    }
+}
+.contact__form {
+  textarea, 
+  input {
+    width: 100%;
+    background-color: #34363a;
+    border-radius: 5px;
+    border: 2px solid #585b60 ;
+    padding: 10px;
+  }
+  input {
+    
+    margin-bottom: 1em;
+  }
+
+}
 //ALWAYS END
 @import "media";

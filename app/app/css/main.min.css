@@ -1,0 +1,251 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666; }
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  section.features, section.features__gallery, section.download__app {
+    background-color: #34363a;
+    background-repeat: no-repeat; }
+  section h2 {
+    color: #fff; }
+
+.icon__outline {
+  display: inline-block;
+  padding: .7em;
+  background-color: transparent;
+  border: 2px solid #5f87b9;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: background-color ease-in 0.2s;
+  transition: background-color ease-in 0.2s; }
+
+.features__item:hover .icon__outline {
+  background-color: #5f87b9; }
+
+.icon {
+  vertical-align: middle;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  fill: #fff;
+  -webkit-animation: floatyman 2.5s ease-in-out alternate infinite;
+  animation: floatyman 2.5s ease-in-out alternate infinite; }
+
+.features .features__item,
+.features__gallery .features__item {
+  padding-top: 15px; }
+
+.features .features__text,
+.features__gallery .features__text {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  color: #ECF0F1; }
+
+.features .features__item-title,
+.features__gallery .features__item-title {
+  margin-bottom: 0;
+  color: #5f87b9;
+  font: 1.3rem "MonserratRegular", sans-serif; }
+
+.features .features__item-description,
+.features__gallery .features__item-description {
+  margin-top: 0;
+  color: #9da6ac;
+  font: 1rem "MonserratLight", sans-serif; }
+
+.features {
+  position: relative;
+  z-index: 10;
+  background-image: url(../img/features_item.png);
+  background-position: left bottom;
+  background-size: 70%;
+  padding-bottom: 12%; }
+
+.feature__video,
+.testimonial {
+  position: relative;
+  background: center no-repeat transparent; }
+  .feature__video::after,
+  .testimonial::after {
+    background: transparent;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(95, 135, 185, 0.94)), color-stop(95%, rgba(95, 86, 144, 0.94)));
+    background: -webkit-linear-gradient(left, rgba(95, 135, 185, 0.94) 0%, rgba(95, 86, 144, 0.94) 95%);
+    background: linear-gradient(to right, rgba(95, 135, 185, 0.94) 0%, rgba(95, 86, 144, 0.94) 95%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .feature__video .content,
+  .testimonial .content {
+    position: relative;
+    z-index: 1;
+    color: #fff; }
+
+.feature__video {
+  background-image: url(../img/video_bg.jpg); }
+  .feature__video .content {
+    font-size: 1.7rem; }
+
+.features__gallery .features__middle {
+  position: relative;
+  left: -25%; }
+  .features__gallery .features__middle img {
+    max-width: 150%; }
+
+.dotted__nav {
+  padding-left: 0;
+  padding-top: 4em; }
+  .dotted__nav .dotted__nav-link {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+  .dotted__nav .dotted__nav-active {
+    width: 20px;
+    height: 20px;
+    background: #5f87b9;
+    vertical-align: top; }
+
+.dotted__nav-white .dotted__nav-link {
+  opacity: .4; }
+
+.dotted__nav-white .dotted__nav-active {
+  background: #fff;
+  opacity: 1; }
+
+.dotted__nav-white {
+  padding-top: 1em; }
+  .dotted__nav-white .dotted__nav-link {
+    margin-left: 10px;
+    width: 13px;
+    height: 13px; }
+  .dotted__nav-white .dotted__nav-active {
+    width: 16px;
+    height: 16px;
+    vertical-align: baseline; }
+
+.testimonial {
+  background-image: url(../img/testimonial_bg.jpg); }
+  .testimonial__author {
+    color: #2A2A2B; }
+  .testimonial__photo {
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto; }
+    .testimonial__photo img {
+      -webkit-border-radius: 50%;
+      border-radius: 50%; }
+
+.download__app .download__app-title {
+  font-size: 2rem; }
+
+.download__app .download__app-desc {
+  color: #9da6ac; }
+
+.app__platform {
+  margin-top: 4em; }
+
+.platform__item {
+  display: inline-block;
+  margin-right: 20px;
+  background: #858689;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 5px; }
+  .platform__item:last-cild {
+    margin-right: 0; }
+  .platform__item a {
+    color: #fff;
+    text-decoration: none; }
+  .platform__item p {
+    margin: 0;
+    padding-top: 3px;
+    text-transform: uppercase;
+    font-size: .7rem;
+    line-height: normal; }
+    .platform__item p span {
+      font-size: 1.3rem; }
+  .platform__item .icon__platform {
+    width: 2.7em;
+    height: 2.7em; }
+
+.platform__item-android {
+  background: #a4c639; }
+
+.platform__item-win {
+  background: #00bcf2; }
+
+.contacts {
+  background-color: #34363a;
+  padding-top: 0;
+  color: #9da6ac; }
+  .contacts .col-sm-12 {
+    padding: 0; }
+
+.contact__form textarea,
+.contact__form input {
+  width: 100%;
+  background-color: #34363a;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #585b60;
+  padding: 10px; }
+
+.contact__form input {
+  margin-bottom: 1em; }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices */
+  .animated {
+    /*CSS transitions */
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms */
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations */
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ========== */
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */

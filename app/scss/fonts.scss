@@ -1,7 +1,9 @@
-@import "mixin";
+@import "mixins";
 
 // include fonts
 //template - font-face ($font-family,$file-path,$font-weight: normal,$font-style: normal) 
-@include font-face (RobotoRegular, "../fonts/RobotoRegular/RobotoRegular");
+@include font-face (RobotoRegular, "fonts/RobotoRegular/RobotoRegular");
+@include font-face (MonserratLight, "fonts/MonserratLight/montserrat-light-webfont");
+@include font-face (MonserratRegular, "fonts/MonserratRegular/montserrat-regular-webfont");
 
 // mixin for base font
