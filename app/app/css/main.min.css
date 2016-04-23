@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1; }
@@ -30,6 +29,7 @@ section {
     background-color: #34363a;
     background-repeat: no-repeat; }
   section h2 {
+    font-size: 2rem;
     color: #fff; }
 
 .icon__outline {
@@ -62,7 +62,7 @@ section {
 .features__gallery .features__text {
   margin-top: 15%;
   margin-bottom: 15%;
-  color: #ECF0F1; }
+  color: #E0E0E0; }
 
 .features .features__item-title,
 .features__gallery .features__item-title {
@@ -156,7 +156,9 @@ section {
 .testimonial {
   background-image: url(../img/testimonial_bg.jpg); }
   .testimonial__author {
-    color: #2A2A2B; }
+    display: inline-block;
+    margin-top: 10px;
+    color: #d7dae5; }
   .testimonial__photo {
     width: 60px;
     height: 60px;
@@ -173,7 +175,8 @@ section {
   color: #9da6ac; }
 
 .app__platform {
-  margin-top: 4em; }
+  margin-top: 4em;
+  padding-left: 0; }
 
 .platform__item {
   display: inline-block;
@@ -209,24 +212,139 @@ section {
   background-color: #34363a;
   padding-top: 0;
   color: #9da6ac; }
-  .contacts .col-sm-12 {
-    padding: 0; }
+  .contacts .contacts__header {
+    margin-top: 3em; }
 
-.contact__form textarea,
-.contact__form input {
-  width: 100%;
-  background-color: #34363a;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  border: 2px solid #585b60;
-  padding: 10px; }
+.contacts {
+  background-color: #2d2f32; }
 
-.contact__form input {
-  margin-bottom: 1em; }
+.contact__form {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .contact__form textarea,
+  .contact__form input,
+  .contact__form button {
+    padding: 1em;
+    width: 100%;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+  .contact__form textarea,
+  .contact__form input {
+    background-color: #34363a;
+    border: 2px solid #585b60; }
+  .contact__form input {
+    margin-bottom: .5em; }
+  .contact__form button {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #5f87b9;
+    -webkit-box-shadow: 0 3px #5f5690;
+    box-shadow: 0 3px #5f5690;
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s; }
+    .contact__form button:active {
+      -webkit-box-shadow: 0 1px #5f5690;
+      box-shadow: 0 1px #5f5690; }
+
+.subscribe__form .subscribe__form-desc {
+  margin-top: -1.5em;
+  color: #fff; }
+
+.subscribe__form form {
+  margin-top: 3em; }
+
+.subscribe__form input,
+.subscribe__form button {
+  padding: 1em;
+  line-height: normal; }
+
+.subscribe__form input {
+  width: 70%;
+  color: #2d2f32;
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+  -webkit-box-shadow: 0 3px #cccccc;
+  box-shadow: 0 3px #cccccc; }
+
+.subscribe__form button {
+  width: 30%;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #5f87b9;
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+  -webkit-box-shadow: 0 3px #5f5690;
+  box-shadow: 0 3px #5f5690; }
+
+footer {
+  padding-top: 1em;
+  background-color: #34363a; }
+
+.social {
+  font-size: 1.3em;
+  padding-left: 0; }
+  .social .social__link {
+    margin-right: 1.8em; }
+    .social .social__link .icon {
+      fill: #d0d1d2;
+      -webkit-transition: all ease-in .2s;
+      transition: all ease-in .2s; }
+    .social .social__link:hover .icon__dr {
+      fill: #ea4c89; }
+    .social .social__link:hover .icon__fb {
+      fill: #3b5998; }
+    .social .social__link:hover .icon__ig {
+      fill: #3f729b; }
+    .social .social__link:hover .icon__pin {
+      fill: #bd081c; }
+    .social .social__link:hover .icon__tw {
+      fill: #55acee; }
+    .social .social__link a {
+      display: block; }
+
+.copyright {
+  margin-top: 5px;
+  color: #585b60; }
+  .copyright::before {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    width: 300px;
+    height: 1px;
+    background-color: #585b60; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* */
+  html {
+    font-size: 12px; }
+  .main__header .main__img {
+    left: -90px; }
+  .platform__item .icon__platform {
+    font-size: 1rem; } }
+
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* */
+  .main__header {
+    min-height: 1024px; }
+    .main__header .logo {
+      margin-top: 13rem; }
+  .features {
+    background-image: none;
+    padding-bottom: 5rem; }
+  .features__gallery .features__middle {
+    left: 0; }
+    .features__gallery .features__middle img {
+      max-width: 100%; }
+  .social .social__link {
+    font-size: 1.5rem; }
+  .platform__item {
+    margin-right: 0; } }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /*Disable Animation on Mobile Devices */
@@ -243,6 +361,37 @@ section {
     animation: none !important; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* */
+  html {
+    font-size: 10px; }
+  section {
+    padding-top: 2rem;
+    padding-bottom: 3rem; }
+  .main__header {
+    min-height: 396px; }
+    .main__header .logo {
+      margin-top: 5rem; }
+    .main__header .main__img {
+      left: -40px; }
+  .dotted__nav {
+    padding-top: 2em; }
+  .download__app {
+    padding-bottom: 0; }
+    .download__app .app__platform {
+      margin-top: 2em;
+      margin-bottom: 0; }
+      .download__app .app__platform .platform__item {
+        display: block;
+        height: 50px;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        margin-left: -0.9375rem;
+        margin-right: -0.9375rem; }
+  .social .social__link {
+    font-size: 1.1rem;
+    margin-right: 1em; } }
+
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ========== */
 /* Custom, iPhone Retina */
@@ -250,6 +399,3 @@ section {
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
-=======
-::-webkit-input-placeholder{color:#666;opacity:1}:-moz-placeholder{color:#666;opacity:1}::-moz-placeholder{color:#666;opacity:1}:-ms-input-placeholder{color:#666;opacity:1}body input:focus:required:invalid,body input:required:valid,body textarea:focus:required:invalid,body textarea:required:valid{color:#666}@media only screen and (max-width:768px){.animated{-webkit-transition-property:none!important;transition-property:none!important;-ms-transform:none!important;-webkit-transform:none!important;transform:none!important;-webkit-animation:none!important;animation:none!important}}
->>>>>>> master

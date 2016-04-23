@@ -49,12 +49,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="menu__line">
-					<div class="col-md-3">
+					<div class="col-lg-3">
 						<div class="logo">
 							<img src="img/1453362191819_86ZAf8_1105-newLogo.png" alt="логотип" width="" height="">
 						</div>
 					</div>
-					<div class="col-md-9">
+					<div class="col-lg-9 hidden-md-down">
 						<nav>
 							<ul class="main__navigation">
 								<!-- </li> - remove inline-block white-space  -->
@@ -83,7 +83,7 @@
 				<div class="col-sm-6 col-md-3">
 					<div class="features__item">
 						<div class="icon__outline">
-							<svg class="icon icon-shapes" id="qwer">
+							<svg class="icon icon-shapes">
 								<use xlink:href="#icon-shapes"></use>
 							</svg>
 						</div>
@@ -142,7 +142,7 @@
 	<section class="features__gallery">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-lg-3 hidden-lg-down">
 					<div class="features__left text-right">
 						<div class="features__item">
 							<div class="icon__outline">
@@ -173,12 +173,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-xs-12 col-lg-6">
 					<div class="features__middle">
 						<img src="img/item_gallery_3.png" alt="наушники" width="" height="">
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 hidden-lg-down">
 					<div class="features__right">
 						<div class="features__item">
 							<div class="icon__outline">
@@ -287,16 +287,13 @@
 		</div>
 	</section>
 	<section class="contacts text-center">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-12">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35967.33523339019!2d37.63666895!3d55.70709395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1461359653643" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35967.33523339019!2d37.63666895!3d55.70709395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1461359653643" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 		<div class="container">
-			<h2>Contact form</h2>
-			<p>Have feedback, suggestion, or any thought about our product? Feel free to contact us anytime, we will get back to you in 24 hours.</p>
+			<div class="contacts__header">
+				<h2>Contact form</h2>
+				<p>Have feedback, suggestion, or any thought about our product? <br/>
+				Feel free to contact us anytime, we will get back to you in 24 hours.</p>
+			</div>
 			<form class="contact__form" action="#" method="POST">
 				<div class="row">
 					<div class="col-md-6">
@@ -314,26 +311,48 @@
 				</div>
 				<button type="submit">send message</button>
 			</form>
-			<div class="subscribe_form">
+			<div class="subscribe__form">
 				<h2>Subscribe Now</h2>
-				<p>Get latest news</p>
+				<p class="subscribe__form-desc">Get latest news</p>
 				<form action="#" method="POST">
-					<input type="email" name="email" placeholder="Email Address">
-					<button type="submit">subscribe</button>
+					<div class="row">
+						<div class="col-sm-12 col-lg-6 col-lg-push-3">
+							<input type="email" name="email" placeholder="Email Address"><!-- 
+							 --><button type="submit">subscribe</button>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer class="text-center">
 		<div class="container">
 			<ul class="social">
-				<li class="social__link"><a href="#"></a></li>
-				<li class="social__link"><a href="#"></a></li>
-				<li class="social__link"><a href="#"></a></li>
-				<li class="social__link"><a href="#"></a></li>
-				<li class="social__link"><a href="#"></a></li>
-				<li class="social__link"><a href="#"></a></li>
-				<li class="social__link"><a href="#"></a></li>
+				<li class="social__link icon__outline"><a href="#">
+					<svg class="icon icon__dr">
+						<use xlink:href="#icon-Dribble"></use>
+					</svg>
+				</a></li>
+				<li class="social__link icon__outline"><a href="#">
+					<svg class="icon icon__fb">
+						<use xlink:href="#icon-Facebook"></use>
+					</svg>
+				</a></li>
+				<li class="social__link icon__outline"><a href="#">
+					<svg class="icon icon__ig">
+						<use xlink:href="#icon-Instagram"></use>
+					</svg>
+				</a></li>
+				<li class="social__link icon__outline"><a href="#">
+					<svg class="icon icon__pin">
+						<use xlink:href="#icon-Pinterest"></use>
+					</svg>
+				</a></li>
+				<li class="social__link icon__outline"><a href="#">
+					<svg class="icon icon__tw">
+						<use xlink:href="#icon-Twitter"></use>
+					</svg>
+				</a></li>
 			</ul>
 			<div class="copyright">
 				<p>Copyright © atwebdev.com. All rights reserved</p>

@@ -45,6 +45,7 @@ section {
       background-repeat: no-repeat;
     }
     h2 {
+      font-size: 2rem;
       color: #fff;
     }
 
@@ -80,7 +81,7 @@ section {
   .features__text {
       margin-top: 15%;
       margin-bottom: 15%;
-      color: #ECF0F1;
+      color: #E0E0E0;
     }
     .features__item-title {
       margin-bottom: 0;
@@ -188,7 +189,9 @@ section {
    // фон под градиентом
   background-image: url(../img/testimonial_bg.jpg);
   &__author {
-    color: #2A2A2B;
+    display: inline-block;
+    margin-top: 10px;
+    color: #d7dae5;
   }
   &__photo {
     width: 60px;
@@ -210,6 +213,7 @@ section {
 }
 .app__platform {
   margin-top: 4em;
+  padding-left: 0;
 }
 .platform__item {
   display: inline-block;
@@ -249,24 +253,111 @@ section {
   background-color: #34363a;
   padding-top: 0;
   color: #9da6ac;
-    .col-sm-12 {
-      padding:0;
+    .contacts__header {
+      margin-top:3em;
     }
 }
+.contacts {
+  background-color: #2d2f32;
+}
 .contact__form {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  textarea,
+  input,
+  button {
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+  }
   textarea, 
   input {
-    width: 100%;
     background-color: #34363a;
-    border-radius: 5px;
     border: 2px solid #585b60 ;
-    padding: 10px;
+    // padding: 10px;
   }
   input {
-    
-    margin-bottom: 1em;
+    margin-bottom: .5em;
   }
+  button {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: $main-color;
+    box-shadow: 0 3px $main-color-dark;
+    transition: all ease-in 0.2s;
+      &:active {
+        box-shadow: 0 1px $main-color-dark;
+      }
+  }
+}
+.subscribe__form {
+  .subscribe__form-desc {
+    margin-top: -1.5em;
+    color: #fff;
+  }
+  form {
+    margin-top: 3em;
+  }
+  input,
+  button {
+    padding: 1em;
+    line-height: normal;
+  }
+  input {
+    width: 70%;
+    color:#2d2f32;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 0 3px #cccccc;
+  }  
+  button {
+    width: 30%;
+    color:#fff;
+    text-transform: uppercase;
+    background-color: $main-color;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 3px $main-color-dark;
+  }
+}
+footer {
+  padding-top: 1em;
+  background-color: #34363a;
+}
+.social {
+  font-size: 1.3em;
+  padding-left: 0;
+  .social__link {
+    margin-right: 1.8em;
 
+
+      .icon {
+        fill: #d0d1d2;
+        transition: all ease-in .2s; 
+      }
+      &:hover {
+        .icon__dr {fill: #ea4c89;}
+        .icon__fb {fill: #3b5998;}
+        .icon__ig {fill: #3f729b;}
+        .icon__pin {fill: #bd081c;}
+        .icon__tw {fill: #55acee;}
+      }
+    a {
+      display: block;
+    }
+  }
+}
+.copyright {
+  &::before {
+    display: block;
+    margin: 0 auto;
+    content: "";
+    width: 300px;
+    height:1px;
+    background-color: #585b60;
+  }
+  margin-top: 5px;
+  color: #585b60;
 }
 //ALWAYS END
 @import "media";
