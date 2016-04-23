@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -85,3 +86,6 @@ img {
       transition: background-color ease-in 0.2s; }
       .main__header .main__navigation-link:hover {
         background-color: rgba(53, 48, 81, 0.6); }
+=======
+body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:RobotoRegular,sans-serif;overflow-x:hidden}.hidden{display:none}
+>>>>>>> master

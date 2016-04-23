@@ -1,6 +1,7 @@
 // Core variables and mixins
 @import "variables";
 @import "mixins";
+<<<<<<< HEAD
 // включить в сетку
 * {
     -webkit-box-sizing: border-box;
@@ -40,6 +41,9 @@
   text-align: right;
 }
 // 
+=======
+
+>>>>>>> master
 body {
   @include font-smoothing;
   font-size: 16px;
